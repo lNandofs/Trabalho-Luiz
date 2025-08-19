@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+}
+
+/* PAGINA INICIAL */
+
+.apresentação{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px; /*tamanho da frase */
+    color: white;
+    background-color:darkcyan ; /*cor de fundo da frase*/
+    padding: 10px;
+    border-radius: 10px; /* arredondamento das bordas do fundo da frase */
+}
+
+nav{
+    background-color: darkcyan;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /*espaço entre os botões*/ 
+}
+
+nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    background-color:darkslategray; /* cor do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+ nav a:hover {
+            background-color: #777; /* muda a cor do botão ao passar o cursor do mouse em cima */
+        }
+
+.container{
+    display: flex;
+    justify-content: center; /*centraliza as imagens*/
+    gap: 50px; /*espaço entre as imagens */
+    margin-top: 20px; /*controla o espaço entre o nav e as imagens*/
+}
+
+.imagem{
+    text-align: center;
+}
+
+.imagem img{
+    width: 550px;
+    height: 700px;
+    object-fit: cover; /* regula as imagens de forma proporcional sem distorcer a imagem */
+    display: block;
+    border-radius: 10px;
+}
+ 
+/* SOBRE MIM */
+
+.sobre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hobbies{
+    display: flex; /*colocar as imagens uma do lado da outra */
+    justify-content: center;/*centraliza as imagens na tela*/
+    gap: 20px;/*espaço entre as imagens */
+    margin-top: 50px;/*espaço que fica acima das imagens entre o ultimo parágrafo*/
+}
+
+.hobbies img{
+    width: 500px; /*largura */
+    height: 300px; /*comprimento*/
+    border-radius: 9px; /* bordas*/
+}
+/*FORMAÇÃO*/
+
+.formacao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgformacao{
+    width: 800px;
+    height: 600px;
+    display: block; /* transforma a imagem em um bloco */
+    margin: 0 auto;     
+    border-radius: 10px;
+}
+
+/*PORTIFÓLIO*/
+.fonte {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao2 {
+    text-align: center;       /* centraliza o botão na página */
+    margin-top: 50px;         /* afasta do topo da página */
+}
+
+.botao2 button {
+    width: 300px;/*largura do botão*/
+    height: 50px; /*comprimento do botão*/
+    font-size: 16px;          /* tamanho da letra */
+    background-color: darkcyan;   /* cor de fundo */
+    color: #fff;              /* cor do texto branca */
+    border: none;             /* remove borda padrão */
+    border-radius: 8px;       /* bordas arredondadas */
+    cursor: pointer;          /* muda para mãozinha quando passa o mouse */
+    transition: background 0.3s; /* efeito suave quando muda a cor */
+}
+
+.botao2 button:hover {
+    background-color: darkslategray;   /* cor do botão quando passa o mouse */
+}
+
+/*CONTATO*/
+
+form {
+      max-width: 400px; /* limitei o tamanho do form porque estava muito grande */
+      margin: auto; /* para deixar ele no meio */
+    }
+
+    label {
+      display: block; /* cada label vai ficar em cima do campo */
+      margin-top: 10px; /* espaço de cima entre cada label */
+    }
+
+    input, textarea {
+      width: 100%; /*largura */
+      padding: 8px; /*espaço de cada caixa de texto*/
+      margin-top: 5px; /* espaço em cima do campo */
+      margin-bottom: 10px; /* espaço embaixo do campo */
+      border: 1px solid #ccc; /* borda */
+      border-radius: 4px; /* borda arredondada */
+    }
+
+    button {
+      padding: 10px; /* tamanho do botão*/
+      width: 100%; /*largura */
+      background: #333; /* cor preta no fundo */
+      color: white; /* cor do texto branca */
+      border: none; /* tirei a borda botão */
+      border-radius: 4px; /* borda arredondada */
+      cursor: pointer; /* mãozinha quando passa por cima */
+    }
+
+    button:hover {
+      background: #555; /* botão muda de cor quando passa o cursor por cima */
+    }
+
+/*RODAPÉ*/
+
+.rodape {
+    position: fixed;/* deixei o rodapé grudado na tela, ele não some quando rola */
+    left: 0;/* coloquei ele encostado na esquerda */
+    bottom: 0;/* coloquei ele encostado embaixo de todo o site*/
+    width: 100%;/* fiz ele ocupar a largura da tela inteira */
+    text-align: center; /*texto no meio*/
+    padding: 12px;/*tamanho do rodapé*/
+    font-size: 14px;/*tamanho da fonte*/
+    color: #666;/*cor */
+    border-top: 1px solid #eee;/*linha da parte de cima do rodapé*/
+    background: #fafafa;    /* cor clara para deixar bem discreto */
+  }
+
+
+
